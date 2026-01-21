@@ -45,14 +45,22 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-blue-950 text-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           
           {/* Brand & Contact */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold text-white mb-4">NPC</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+             <div
+  className="flex items-center"
+>
+  <img
+    src="/npc-logo1.png"
+    alt="Nairobi Pesa City (NPC) Logo"
+    className={`h-10 mb-4 w-auto transition-all duration-300 brightness-0 invert drop-shadow-lg`}
+  />
+</div>
+            <p className="text-gray-300 mb-6 leading-relaxed">
               Nairobi Pesa City (NPC) is a world-class financial hub strategically positioned at the heart of Nairobi’s financial ecosystem. Designed to rival global financial centres such as Wall Street and Canary Wharf, NPC is set to become Africa’s premier destination for financial institutions, investors, and innovators seeking opportunity, scale, and global connectivity.
             </p>
 
@@ -64,7 +72,7 @@ const Footer = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-blue-800 hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-gray-300 hover:bg-blue-800 hover:text-white transition-all duration-300 transform hover:scale-110"
                 >
                   {social.icon}
                 </a>
@@ -81,7 +89,7 @@ const Footer = () => {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -99,7 +107,7 @@ const Footer = () => {
                   <a
                     href={link.href}
                     onClick={(e) => handleLinkClick(e, link.href)}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
+                    className="text-gray-300 hover:text-white transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -112,7 +120,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact us</h4>
               {/* Contact Info */}
-            <div className="space-y-2 text-gray-400 text-sm mb-6">
+            <div className="space-y-2 text-gray-300 text-sm mb-6">
               <p>20th Floor, GTC Office Tower, Chiromo Road</p>
               <p>1828-00200 NRB</p>
               <p>
@@ -137,16 +145,16 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
+        <div className="border-t border-blue-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-300 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} NPC. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}
-            className="group flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300"
+            className="group flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm font-medium">Back to top</span>
-            <div className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center group-hover:bg-blue-800 transition-all duration-300 transform group-hover:-translate-y-1">
+            <div className="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center group-hover:bg-blue-800 transition-all duration-300 transform group-hover:-translate-y-1">
               <FaArrowUp className="text-sm" />
             </div>
           </button>

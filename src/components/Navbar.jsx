@@ -54,16 +54,21 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className={`text-2xl font-bold transition-colors duration-300 ${
-              scrolled ? 'text-blue-900' : 'text-white drop-shadow-lg'
-            }`}
-          >
-            NPC
-          </motion.div>
+         <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.2 }}
+  className="flex items-center"
+>
+  <img
+    src="/npc-logo1.png"
+    alt="Nairobi Pesa City (NPC) Logo"
+    className={`h-10 w-auto transition-all duration-300 ${
+      scrolled ? 'brightness-100' : 'brightness-0 invert drop-shadow-lg'
+    }`}
+  />
+</motion.div>
+
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
