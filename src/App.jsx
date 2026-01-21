@@ -1,0 +1,25 @@
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import FAQ from './components/FAQ';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import More from './components/More';
+
+function App() {
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <More />
+      <Services />
+      <FAQ />
+      {/* <Contact /> */}
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
