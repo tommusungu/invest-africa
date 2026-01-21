@@ -26,13 +26,21 @@ const Navbar = () => {
   ];
 
   const scrollToSection = (e, href) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
-    }
-  };
+  e.preventDefault();
+
+  const element = document.querySelector(href);
+  if (!element) return;
+
+  // Close menu AFTER scroll starts (mobile-safe)
+  requestAnimationFrame(() => {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  setTimeout(() => {
+    setIsOpen(false);
+  }, 300); // 👈 critical for mobile
+};
+
 
   return (
     <motion.nav
