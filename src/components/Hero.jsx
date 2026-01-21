@@ -80,7 +80,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-blue-100"
           >
-            Africa's Financial District of the Future
+            Africa’s Financial District. The Gateway to Global Capital.
           </motion.div>
 
           <motion.p
@@ -89,19 +89,17 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-100 mb-4 max-w-4xl mx-auto leading-relaxed"
           >
-            A world-class financial district rising in Ruiru, Kiambu County. Designed to rival global 
-            financial hubs such as Wall Street and Canary Wharf, positioning Kenya as Africa's premier 
-            gateway to global finance, investment, and innovation.
+            Nairobi Pesa City (NPC) is a world-class financial hub strategically positioned at the heart of Nairobi’s financial ecosystem. Designed to rival global financial centres such as Wall Street and Canary Wharf, NPC is set to become Africa’s premier destination for financial institutions, investors, and innovators seeking opportunity, scale, and global connectivity.
           </motion.p>
 
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             className="text-xl md:text-2xl font-semibold mb-10 text-blue-200"
           >
             Build. Invest. Connect Africa to the World.
-          </motion.p>
+          </motion.p> */}
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}

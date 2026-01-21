@@ -6,6 +6,7 @@ import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import More from './components/More';
+import WhyNPC from './components/WhyNPC';
 
 function App() {
   return (
@@ -13,10 +14,12 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      
       <More />
+      <WhyNPC />
       <Services />
       <FAQ />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </div>
   );

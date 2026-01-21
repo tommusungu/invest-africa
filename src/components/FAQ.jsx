@@ -13,34 +13,35 @@ const FAQ = () => {
     {
       question: 'What is NPC?',
       answer:
-        'NPC is a dedicated organization focused on community development, innovation, and creating positive social impact through various programs and initiatives.',
+        'Nairobi Pesa City (NPC) is a world-class financial district strategically positioned at the heart of Nairobi’s financial ecosystem. Anchored within the Nairobi International Financial Centre (NIFC) framework, NPC is designed to rival leading global financial hubs while serving as Africa’s gateway to global capital.',
     },
     {
       question: 'How can I get involved?',
       answer:
-        'There are many ways to get involved! You can volunteer, participate in our programs, become a partner, or support our initiatives. Contact us to learn more about current opportunities.',
+        'Institutions and professionals can engage with NPC by establishing regional or global headquarters, investing within the district, partnering within the ecosystem, or collaborating across finance, technology, and professional services to participate in Africa’s next-generation financial hub.',
     },
     {
       question: 'What programs do you offer?',
       answer:
-        'We offer a wide range of programs including educational training, community engagement initiatives, project management services, and strategic planning support.',
+        'NPC supports a wide range of financial, innovation, and ecosystem initiatives including FinTech innovation platforms, talent development partnerships with universities and professional institutions, and collaborative programs that enable cross-border trade, investment, and capital flows.',
     },
     {
       question: 'Who can benefit from your services?',
       answer:
-        'Our services are designed to benefit communities, organizations, and individuals looking to make a positive impact. We work with diverse groups including nonprofits, educational institutions, and community organizations.',
+        'NPC is designed for financial institutions, investors, FinTech innovators, professional services firms, multinational corporations, and talent seeking a globally competitive, transparent, and future-ready financial environment in Africa.',
     },
     {
-      question: 'How is NPC funded?',
+      question: 'How is NPC governed?',
       answer:
-        'NPC is funded through a combination of grants, partnerships, donations, and program fees. We maintain transparency in our funding to ensure accountability to our stakeholders.',
+        'NPC operates under a strong governance framework comprising a Board of Directors providing strategic oversight, an Executive Leadership Team managing operations and development, and specialist functional teams across finance, innovation, legal, sustainability, and stakeholder engagement.',
     },
     {
-      question: 'Where are you located?',
+      question: 'Where is NPC located?',
       answer:
-        'While our main office is centrally located, we work with communities and partners across multiple regions. Contact us to learn more about our service areas.',
+        'NPC is located in Nairobi, East Africa’s commercial and financial capital, providing unrivalled access to regional and international markets while operating within a globally aligned regulatory and business environment.',
     },
   ];
+
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);

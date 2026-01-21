@@ -15,11 +15,13 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
+    // { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Opportunity', href: '#services' },
-    { name: 'Innovation', href: '#services' },
-    { name: 'Setup', href: '#faq' },
+        { name: 'Why NPC', href: '#why-npc' },
+
+    { name: 'Our Ecosystem', href: '#ecosystem' },
+    { name: 'Opportunity', href: '#what-we-offer' },
+    { name: 'Innovation', href: '#what-we-offer' },
     { name: 'FAQ', href: '#faq' },
   ];
 

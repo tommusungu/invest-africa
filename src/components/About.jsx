@@ -1,34 +1,36 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FaUsers, FaLightbulb, FaHandshake, FaAward } from 'react-icons/fa';
+  import { FaUsers, FaUniversity, FaLaptopCode, FaMoneyBillWave } from 'react-icons/fa';
 
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const features = [
-    {
-      icon: <FaUsers />,
-      title: 'Community Driven',
-      description: 'We believe in the power of community and collective action to create meaningful change.',
-    },
-    {
-      icon: <FaLightbulb />,
-      title: 'Innovative Solutions',
-      description: 'Leveraging cutting-edge technology and creative thinking to solve complex challenges.',
-    },
-    {
-      icon: <FaHandshake />,
-      title: 'Collaborative Approach',
-      description: 'Working together with stakeholders to ensure sustainable and impactful outcomes.',
-    },
-    {
-      icon: <FaAward />,
-      title: 'Excellence',
-      description: 'Committed to delivering the highest quality in everything we do.',
-    },
-  ];
+
+const features = [
+  {
+    icon: <FaMoneyBillWave />,
+    title: 'Financial Institutions',
+    description: 'NPC hosts banks, investment firms, insurance companies, asset managers, payment service providers, and wealth management firms.',
+  },
+  {
+    icon: <FaUsers />,
+    title: 'Professional Services',
+    description: 'Law firms, accounting firms, advisory services, and consultancies provide critical support to businesses operating within the district.',
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: 'FinTech & Innovation',
+    description: 'NPC is a hub for FinTech startups and digital finance innovators, fostering collaboration across blockchain, AI, cybersecurity, and digital payments.',
+  },
+  {
+    icon: <FaUniversity />,
+    title: 'Talent & Knowledge',
+    description: 'Through partnerships with universities and training institutions, NPC nurtures a strong pipeline of finance, legal, technology, and data professionals.',
+  },
+];
+
 
   return (
     <section id="about" className="py-20 bg-white" ref={ref}>
@@ -46,13 +48,11 @@ const About = () => {
             Who <span className="text-blue-800">We Are</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            NPC is a dedicated organization committed to fostering positive change through innovative programs,
-            community engagement, and collaborative partnerships. We strive to create lasting impact in the
-            communities we serve.
+           Nairobi Pesa City was conceived from a bold vision: to propel Kenya—and Africa—onto the global financial stage. Inspired by the world’s most successful financial districts, NPC is more than a development project; it is a catalyst for economic transformation.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div id="ecosystem" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
