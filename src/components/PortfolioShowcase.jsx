@@ -20,7 +20,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'ADAM Advisory (ADGM)',
     logo: '/logos/adam-advisory.png',
-    image: '/portfolio/adam-advisory.jpg',
+    image: '/portfolio/adam.png',
     description:
       'Africa Diaspora Asset Managers (ADAM Advisory) is the first diaspora-focused fund manager in Kenya, operating as a registered subsidiary in Abu Dhabi Global Market (ADGM). It provides diversified unit trusts including money market, fixed income, equities, property, and SME-focused private equity — empowering the Kenyan diaspora and pan-African investors with digital asset management tools.',
     tags: ['Diaspora Finance', 'Unit Trusts', 'ADGM Regulated', 'Private Equity'],
@@ -47,7 +47,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'Mzalendo Pension Fund',
     logo: '/logos/mzalendo.png',
-    image: '/portfolio/mzalendo.jpg',
+    image: '/portfolio/mzalendo.png',
     description:
       'Mzalendo delivers diaspora-led pension schemes for Kenyans abroad, offering social security solutions tailored to mobile workers and retirees. The fund builds diversified portfolios aligned with global pension best practices, leveraging regulatory reforms to strengthen retirement security for the African diaspora.',
     tags: ['Pension', 'Diaspora', 'Social Security', 'Retirement'],
@@ -98,7 +98,7 @@ const portfolioCompanies = [
     sector: 'Logistics & Trade Platforms',
     name: 'Port Community System',
     logo: '/logos/emea-port.png',
-    image: '/portfolio/port-community.jpg',
+    image: '/portfolio/emea.png',
     description:
       'Operated by Invest Africa\'s subsidiary, EMEA Port Logistics Ltd, in partnership with DP World, this digital port solution integrates customs, clearing agents, shippers, and port authorities on a unified data platform. It enhances efficiency, transparency, and coordination in Kenya\'s maritime logistics — reducing bottlenecks and improving trade flows.',
     tags: ['Port Logistics', 'DP World', 'Trade Facilitation', 'Maritime'],
@@ -107,7 +107,7 @@ const portfolioCompanies = [
     sector: 'Logistics & Trade Platforms',
     name: 'E-Jumla',
     logo: '/logos/e-jumla.png',
-    image: '/portfolio/e-jumla.jpg',
+    image: '/portfolio/jumla.png',
     description:
       'E-Jumla digitises car trading with a marketplace for new imported vehicles. It offers competitive pricing, financing through partner banks, and a streamlined buying experience for customers seeking alternative car markets — making vehicle ownership more accessible across Kenya.',
     tags: ['AutoTech', 'Vehicle Finance', 'Marketplace', 'Import'],
@@ -127,7 +127,7 @@ const portfolioCompanies = [
     sector: 'Renewable Energy & Clean Cooking',
     name: 'Eveready ICEP',
     logo: '/logos/icep.png',
-    image: '/portfolio/icep.jpg',
+    image: '/portfolio/eveready.png',
     description:
       'Following the acquisition of Eveready, Invest Africa transformed operations into ICEP — a platform offering clean energy solutions including briquettes, solar systems, LPG, and renewables. ICEP catalyses Africa\'s transition from fossil fuels, providing affordable, sustainable energy to households and businesses across the continent.',
     tags: ['Clean Energy', 'Solar', 'Briquettes', 'LPG'],
@@ -143,15 +143,15 @@ const portfolioCompanies = [
       'Owned by Execuget Consult under Invest Africa, M-Ajira is a workforce placement platform leveraging AI, mobile, and digital technology to connect African youth and professionals with job opportunities abroad. Operating physical offices in Dubai and Saudi Arabia, it provides broader outreach, client service, and quality placement.',
     tags: ['Workforce', 'AI Placement', 'Gulf Jobs', 'Youth Employment'],
   },
-//   {
-//     sector: 'Human Capital & Workforce Solutions',
-//     name: 'GAI Campus BPO',
-//     logo: '/logos/gai.png',
-//     image: '/portfolio/gai.jpg',
-//     description:
-//       'Gulf African International\'s Campus BPO pilots outsourcing within university settings, offering students practical work experience and income. This initiative reduces operational costs and enhances industry competitiveness by blending education with employability — creating a pipeline of job-ready graduates.',
-//     tags: ['BPO', 'University Partnerships', 'Youth Employment', 'Outsourcing'],
-//   },
+  {
+    sector: 'Human Capital & Workforce Solutions',
+    name: 'GAI Campus BPO',
+    logo: '/logos/gai.png',
+    image: '/portfolio/gai.png',
+    description:
+      'Gulf African International\'s Campus BPO pilots outsourcing within university settings, offering students practical work experience and income. This initiative reduces operational costs and enhances industry competitiveness by blending education with employability — creating a pipeline of job-ready graduates.',
+    tags: ['BPO', 'University Partnerships', 'Youth Employment', 'Outsourcing'],
+  },
 ];
 
 // ─── Sector groupings for header pills ───────────────────────────────────────
