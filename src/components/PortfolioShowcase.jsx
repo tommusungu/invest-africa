@@ -11,7 +11,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'Nairobi Pesa City Securities Exchange',
     logo: '/logos/nairobi-pesa-city.png',
-    image: '/portfolio/securities-exchange.jpg',
+    image: '/financial-district.jpg',
     description:
       'Operating from Nairobi GTC and licensed by the Capital Markets Authority, the Nairobi Pesa City Securities Exchange is an innovative securities exchange offering automated trading and a broad range of financial instruments — equities, bonds, and REITs. It emphasises accessibility for both retail and institutional investors, with plans to introduce new asset classes to expand Kenya\'s capital markets.',
     tags: ['Equities', 'Bonds', 'REITs', 'CMA Licensed'],
@@ -20,7 +20,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'ADAM Advisory (ADGM)',
     logo: '/logos/adam-advisory.png',
-    image: '/portfolio/adam.png',
+    image: '/portfolio/securities-exchange.jpg',
     description:
       'Africa Diaspora Asset Managers (ADAM Advisory) is the first diaspora-focused fund manager in Kenya, operating as a registered subsidiary in Abu Dhabi Global Market (ADGM). It provides diversified unit trusts including money market, fixed income, equities, property, and SME-focused private equity — empowering the Kenyan diaspora and pan-African investors with digital asset management tools.',
     tags: ['Diaspora Finance', 'Unit Trusts', 'ADGM Regulated', 'Private Equity'],
@@ -29,7 +29,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'Africa Green Infrastructure Investment Fund',
     logo: '/logos/agiif.png',
-    image: '/portfolio/agiif.jpg',
+    image: '/portfolio/africa.jpg',
     description:
       'Based in Mauritius and aligned with the Alliance for Green Infrastructure in Africa\'s vision, AGIIF plans to raise $400 million for early-stage green infrastructure projects across energy, transportation, and ICT. Managed by ADAM, the fund blends grants, equity, and commercial capital to de-risk investments, targeting a $10 billion project pipeline fostering Africa\'s long-term resilience.',
     tags: ['Green Finance', '$400M Target', 'Mauritius Based', 'Infrastructure'],
@@ -38,7 +38,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'Nawiri Digital Bank',
     logo: '/logos/nawiri.png',
-    image: '/portfolio/nawiri.jpg',
+    image: '/portfolio/nawiri.avif',
     description:
       'Nawiri is a digital banking platform addressing diaspora financial needs, providing remittance services and accessible fintech solutions in partnership with EN Money, STC, and Ooredoo. It supports instant transfers, savings accounts, and cross-border commerce — promoting financial inclusion for Africans at home and abroad.',
     tags: ['Digital Banking', 'Remittances', 'Fintech', 'Financial Inclusion'],
@@ -47,7 +47,7 @@ const portfolioCompanies = [
     sector: 'Capital Markets & Financial Services',
     name: 'Mzalendo Pension Fund',
     logo: '/logos/mzalendo.png',
-    image: '/portfolio/mzalendo.png',
+    image: '/portfolio/pension.webp',
     description:
       'Mzalendo delivers diaspora-led pension schemes for Kenyans abroad, offering social security solutions tailored to mobile workers and retirees. The fund builds diversified portfolios aligned with global pension best practices, leveraging regulatory reforms to strengthen retirement security for the African diaspora.',
     tags: ['Pension', 'Diaspora', 'Social Security', 'Retirement'],
@@ -58,7 +58,7 @@ const portfolioCompanies = [
     sector: 'Healthcare & Digital Health',
     name: 'DigiAfya Marketplace',
     logo: '/logos/digiafya.png',
-    image: '/portfolio/digiafya-marketplace.jpg',
+    image: '/portfolio/digiafya.jpg',
     description:
       'DigiAfya operates a tech-driven marketplace connecting private hospitals, providers, and pharmacies to affordable, quality medical commodities and equipment. In partnership with financing institutions, it supports access to stock and equipment financing for the private health sector — reducing costs and improving healthcare delivery across Africa.',
     tags: ['HealthTech', 'Medical Commodities', 'Equipment Finance', 'B2B'],
@@ -67,7 +67,7 @@ const portfolioCompanies = [
     sector: 'Healthcare & Digital Health',
     name: 'DigiAfya Health Information System',
     logo: '/logos/digiafya.png',
-    image: '/portfolio/digiafya-his.jpg',
+    image: '/portfolio/digiafya.webp',
     description:
       'An interoperable digital platform that enhances hospital and clinic management by supporting patient records, data analytics, and secure reporting. DigiAfya HIS enables evidence-based healthcare and efficient health administration, strengthening the private health sector\'s capacity to deliver quality outcomes.',
     tags: ['HIS', 'Patient Records', 'Health Analytics', 'Digital Health'],
@@ -78,7 +78,7 @@ const portfolioCompanies = [
     sector: 'Agriculture & Food Security',
     name: 'Mazao Commodities Exchange',
     logo: '/logos/mazao.png',
-    image: '/portfolio/mazao.jpg',
+    image: '/portfolio/amac.webp',
     description:
       'Mazao provides a secure, transparent platform for agricultural commodity trading, helping farmers and traders achieve better pricing, improved risk management, and greater market access. By digitising commodity trading, Mazao supports national food security and agricultural productivity across East Africa.',
     tags: ['Commodities', 'Agri-Trading', 'Food Security', 'Marketplace'],
@@ -87,7 +87,7 @@ const portfolioCompanies = [
     sector: 'Agriculture & Food Security',
     name: 'Warehouse Receipt System (WRS)',
     logo: '/logos/amac.png',
-    image: '/portfolio/wrs.jpg',
+    image: '/portfolio/amac.jfif',
     description:
       'Developed in partnership with ACE Global, Kenya\'s first digital Warehouse Receipt System allows agripreneurs to use insured stored crops as collateral. This innovative trade instrument facilitates access to trade finance, reduces post-harvest losses, and encourages fair returns — transforming how farmers access capital.',
     tags: ['Trade Finance', 'AgriFinance', 'Post-Harvest', 'Collateral'],
@@ -98,7 +98,7 @@ const portfolioCompanies = [
     sector: 'Logistics & Trade Platforms',
     name: 'Port Community System',
     logo: '/logos/emea-port.png',
-    image: '/portfolio/emea.png',
+    image: '/portfolio/port2.avif',
     description:
       'Operated by Invest Africa\'s subsidiary, EMEA Port Logistics Ltd, in partnership with DP World, this digital port solution integrates customs, clearing agents, shippers, and port authorities on a unified data platform. It enhances efficiency, transparency, and coordination in Kenya\'s maritime logistics — reducing bottlenecks and improving trade flows.',
     tags: ['Port Logistics', 'DP World', 'Trade Facilitation', 'Maritime'],
@@ -107,7 +107,7 @@ const portfolioCompanies = [
     sector: 'Logistics & Trade Platforms',
     name: 'E-Jumla',
     logo: '/logos/e-jumla.png',
-    image: '/portfolio/jumla.png',
+    image: '/portfolio/ejumla.jpg',
     description:
       'E-Jumla digitises car trading with a marketplace for new imported vehicles. It offers competitive pricing, financing through partner banks, and a streamlined buying experience for customers seeking alternative car markets — making vehicle ownership more accessible across Kenya.',
     tags: ['AutoTech', 'Vehicle Finance', 'Marketplace', 'Import'],
@@ -147,7 +147,7 @@ const portfolioCompanies = [
     sector: 'Human Capital & Workforce Solutions',
     name: 'GAI Campus BPO',
     logo: '/logos/gai.png',
-    image: '/portfolio/gai.png',
+    image: '/portfolio/gai2.jpg',
     description:
       'Gulf African International\'s Campus BPO pilots outsourcing within university settings, offering students practical work experience and income. This initiative reduces operational costs and enhances industry competitiveness by blending education with employability — creating a pipeline of job-ready graduates.',
     tags: ['BPO', 'University Partnerships', 'Youth Employment', 'Outsourcing'],
