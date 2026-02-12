@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes, FaArrowRight, FaBuilding, FaGlobeAfrica, FaChartLine } from 'react-icons/fa';
+import { FaBars, FaTimes, FaArrowRight } from 'react-icons/fa';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,60 +15,49 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    // { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-        { name: 'Why NPC', href: '#why-npc' },
-
-    { name: 'Our Ecosystem', href: '#ecosystem' },
-    { name: 'Opportunity', href: '#what-we-offer' },
-    { name: 'Innovation', href: '#what-we-offer' },
+    { name: 'Investment Approach', href: '#investment-approach' },
+    { name: 'Our Portfolio', href: '#portfolio' },
+    { name: 'ESG & Impact', href: '#what-we-offer' },
     { name: 'FAQ', href: '#faq' },
   ];
 
   const scrollToSection = (e, href) => {
-  e.preventDefault();
-
-  const element = document.querySelector(href);
-  if (!element) return;
-
-  // Close menu AFTER scroll starts (mobile-safe)
-  requestAnimationFrame(() => {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-
-  setTimeout(() => {
-    setIsOpen(false);
-  }, 300); // 👈 critical for mobile
-};
-
+    e.preventDefault();
+    const element = document.querySelector(href);
+    if (!element) return;
+    requestAnimationFrame(() => {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
+  };
 
   return (
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed w-full z-50 transition-all duration-500 ${
-        scrolled 
-          ? 'bg-white shadow-lg' 
-          : 'bg-transparent'
+        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-         <motion.div
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ delay: 0.2 }}
-  className="flex items-center"
->
-  <img
-    src="/logos/invest_Africa-removebg-preview.png"
-    alt="Invest Africa Logo"
-    className={`h-20 py-2.5 w-auto transition-all duration-300 ${
-      scrolled ? 'brightness-100' : 'brightness-0 invert drop-shadow-lg'
-    }`}
-  />
-</motion.div>
-
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="flex items-center"
+          >
+            <img
+              src="/logos/invest_Africa-removebg-preview.png"
+              alt="Invest Africa Logo"
+              className={`h-20 py-2.5 w-auto transition-all duration-300 ${
+                scrolled ? 'brightness-100' : 'brightness-0 invert drop-shadow-lg'
+              }`}
+            />
+          </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
@@ -80,8 +69,8 @@ const Navbar = () => {
                 transition={{ delay: index * 0.1 }}
                 onClick={(e) => scrollToSection(e, item.href)}
                 className={`transition-colors duration-300 font-medium ${
-                  scrolled 
-                    ? 'text-gray-700 hover:text-red-900' 
+                  scrolled
+                    ? 'text-gray-700 hover:text-red-900'
                     : 'text-white hover:text-red-200 drop-shadow-lg'
                 }`}
               >
@@ -99,7 +88,7 @@ const Navbar = () => {
                   : 'bg-white text-red-900 hover:bg-red-50 shadow-xl'
               }`}
             >
-              Get Started
+              Investor Enquiry
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
             </motion.button>
           </div>
@@ -140,7 +129,7 @@ const Navbar = () => {
                 onClick={(e) => scrollToSection(e, '#contact')}
                 className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-900 text-white rounded-full font-semibold hover:bg-red-800 transition-all duration-300"
               >
-                Get Started
+                Investor Enquiry
                 <FaArrowRight />
               </button>
             </div>
@@ -150,4 +139,5 @@ const Navbar = () => {
     </motion.nav>
   );
 };
+
 export default Navbar;

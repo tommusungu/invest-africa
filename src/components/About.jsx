@@ -1,36 +1,38 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-  import { FaUsers, FaUniversity, FaLaptopCode, FaMoneyBillWave } from 'react-icons/fa';
+import { FaChartLine, FaGlobeAfrica, FaHandshake, FaSeedling } from 'react-icons/fa';
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-
-const features = [
-  {
-    icon: <FaMoneyBillWave />,
-    title: 'Financial Institutions',
-    description: 'NPC hosts banks, investment firms, insurance companies, asset managers, payment service providers, and wealth management firms.',
-  },
-  {
-    icon: <FaUsers />,
-    title: 'Professional Services',
-    description: 'Law firms, accounting firms, advisory services, and consultancies provide critical support to businesses operating within the district.',
-  },
-  {
-    icon: <FaLaptopCode />,
-    title: 'FinTech & Innovation',
-    description: 'NPC is a hub for FinTech startups and digital finance innovators, fostering collaboration across blockchain, AI, cybersecurity, and digital payments.',
-  },
-  {
-    icon: <FaUniversity />,
-    title: 'Talent & Knowledge',
-    description: 'Through partnerships with universities and training institutions, NPC nurtures a strong pipeline of finance, legal, technology, and data professionals.',
-  },
-];
-
+  const features = [
+    {
+      icon: <FaChartLine />,
+      title: 'Capital Markets',
+      description:
+        'Operating securities exchanges, fund management platforms, and digital banking solutions that channel capital across Africa and the diaspora.',
+    },
+    {
+      icon: <FaSeedling />,
+      title: 'Renewable Energy',
+      description:
+        "Driving Africa's clean energy transition through briquettes, solar, LPG, and green infrastructure investment vehicles targeting a $10B pipeline.",
+    },
+    {
+      icon: <FaGlobeAfrica />,
+      title: 'Pan-African Reach',
+      description:
+        "Headquartered in Nairobi with strategic offices in Dubai and Mauritius, operating across critical pillars of Africa's economic development.",
+    },
+    {
+      icon: <FaHandshake />,
+      title: 'Venture Building',
+      description:
+        'An active operational investor with a hands-on approach — building enduring, locally empowered businesses with international governance standards.',
+    },
+  ];
 
   return (
     <section id="about" className="py-20 bg-white" ref={ref}>
@@ -48,7 +50,10 @@ const features = [
             Who <span className="text-red-800">We Are</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-           Nairobi Pesa City was conceived from a bold vision: to propel Kenya—and Africa—onto the global financial stage. Inspired by the world’s most successful financial districts, NPC is more than a development project; it is a catalyst for economic transformation.
+            Invest Africa is a dynamic pan-African holding company and principal investor
+            dedicated to driving Africa's economic transformation. With over 60 years of
+            collective market experience, we own and manage a diversified portfolio across
+            the critical pillars of Africa's development.
           </p>
         </motion.div>
 
@@ -67,31 +72,6 @@ const features = [
             </motion.div>
           ))}
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-gradient-to-r from-red-800 to-red-900 rounded-2xl p-12 text-white"
-        >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
-              <p className="text-red-100 leading-relaxed text-lg">
-                To empower communities through education, innovation, and collaborative action.
-                We aim to create sustainable solutions that address real-world challenges and
-                improve the quality of life for all stakeholders.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
-              <p className="text-red-100 leading-relaxed text-lg">
-                A world where every community has the resources, knowledge, and support needed
-                to thrive. We envision a future built on collaboration, innovation, and shared success.
-              </p>
-            </div>
-          </div>
-        </motion.div> */}
       </div>
     </section>
   );

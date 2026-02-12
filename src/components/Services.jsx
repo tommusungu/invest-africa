@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
-  FaBuilding,
-  FaMicrochip,
-  FaBalanceScale,
+  FaChartBar,
+  FaShieldAlt,
   FaLeaf,
   FaRocket,
+  FaHandHoldingUsd,
   FaNetworkWired,
 } from 'react-icons/fa';
 
@@ -14,54 +14,54 @@ const Services = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
-  const facilities = [
+  const pillars = [
     {
-      icon: <FaBuilding />,
-      title: 'Infrastructure & Facilities',
+      icon: <FaChartBar />,
+      title: 'Sector-Focused Diversification',
       description:
-        'NPC delivers a fully integrated urban and financial environment with Grade-A office buildings, business centres, co-working spaces, conference and exhibition facilities, retail, dining, lifestyle amenities, hotels, residential options, and efficient transport connectivity.',
+        "Our portfolio spans capital markets, renewable energy, healthcare, agriculture, logistics, and human capital — six critical pillars underpinning Africa's economic growth.",
       color: 'from-red-600 to-red-700',
     },
     {
-      icon: <FaMicrochip />,
-      title: 'Innovation & Technology',
+      icon: <FaShieldAlt />,
+      title: 'Governance & Compliance',
       description:
-        'Technology is embedded at the core of NPC’s design. The district offers a plug-and-play environment with smart offices, advanced cybersecurity, high-speed digital infrastructure, and future-ready financial systems that support innovation at scale.',
+        'Invest Africa maintains high governance standards aligned with international best practices, including structured board oversight, regulatory licensing across jurisdictions, and transparent reporting mechanisms.',
       color: 'from-red-700 to-red-800',
     },
     {
-      icon: <FaBalanceScale />,
-      title: 'Governance & Leadership',
+      icon: <FaLeaf />,
+      title: 'ESG & Impact',
       description:
-        'NPC operates under a robust governance framework with a Board of Directors providing strategic oversight, an Executive Leadership Team managing operations, and specialist functional teams across finance, innovation, legal, sustainability, and security.',
+        'Our strategy integrates Environmental, Social, and Governance (ESG) principles into every investment decision — prioritising financial inclusion, clean energy, youth employment, and sustainable trade ecosystems.',
       color: 'from-red-600 to-red-700',
     },
     {
-      icon: <FaLeaf />,
-      title: 'Sustainability & Community',
+      icon: <FaHandHoldingUsd />,
+      title: 'Risk-Mitigated Capital Structuring',
       description:
-        'NPC is committed to responsible and inclusive development through green building practices, renewable energy adoption, resource efficiency, community engagement, and long-term environmental stewardship.',
+        'Each opportunity is supported by robust due diligence, financial modelling, and governance oversight — blending grants, equity, and commercial capital to de-risk investments.',
       color: 'from-red-700 to-red-800',
     },
     {
       icon: <FaRocket />,
-      title: 'Opportunities at NPC',
+      title: 'Long-Term Value Creation',
       description:
-        'NPC provides a powerful platform for financial institutions, investors, innovators, and professionals to establish regional or global headquarters, access capital markets, collaborate with leading players, and shape Africa’s financial future.',
+        'We build enduring, locally empowered businesses with international governance standards, targeting sustainable growth that creates lasting value for investors and communities.',
       color: 'from-red-600 to-red-700',
     },
     {
       icon: <FaNetworkWired />,
-      title: 'Connected Financial Ecosystem',
+      title: 'Co-Investment Opportunities',
       description:
-        'Designed as a fully connected ecosystem, NPC enables seamless collaboration between institutions, technology providers, regulators, and talent—accelerating growth, efficiency, and cross-border opportunity.',
+        'We welcome strategic partnerships for private equity participation, structured products, infrastructure and green finance vehicles, and diaspora-focused investment platforms across Africa.',
       color: 'from-red-700 to-red-800',
     },
   ];
 
   return (
     <section
-      id="what-we-offer"
+      id="investment-approach"
       className="py-20 bg-gradient-to-br from-gray-50 to-red-50"
       ref={ref}
     >
@@ -74,21 +74,20 @@ const Services = () => {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
-            Infrastructure & Facilities
+            Our Approach
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Built for <span className="text-red-800">Global Finance</span>
+            Investment <span className="text-red-800">Philosophy</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Nairobi Pesa City is purpose-built to support world-class financial
-            institutions through advanced infrastructure, strong governance,
-            sustainable development, and unmatched opportunity.
+            We operate as an active operational investor, combining capital deployment with
+            hands-on venture building and strategic oversight across Africa's most critical sectors.
           </p>
         </motion.div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {facilities.map((item, index) => (
+          {pillars.map((item, index) => (
             <motion.div
               key={item.title}
               initial={{ opacity: 0, y: 30 }}
@@ -110,9 +109,7 @@ const Services = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-800 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {item.description}
-                </p>
+                <p className="text-gray-600 leading-relaxed">{item.description}</p>
               </div>
             </motion.div>
           ))}
@@ -127,13 +124,11 @@ const Services = () => {
         >
           <button
             onClick={() =>
-              document.querySelector('#contact')?.scrollIntoView({
-                behavior: 'smooth',
-              })
+              document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
             }
             className="inline-flex items-center gap-2 px-8 py-4 bg-red-800 text-white rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
-            Explore Opportunities at NPC
+            Request Investor Documentation
           </button>
         </motion.div>
       </div>

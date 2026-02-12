@@ -11,51 +11,44 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'What is NPC?',
+      question: 'What is Invest Africa?',
       answer:
-        'Nairobi Pesa City (NPC) is a world-class financial district strategically positioned at the heart of Nairobi’s financial ecosystem. Anchored within the Nairobi International Financial Centre (NIFC) framework, NPC is designed to rival leading global financial hubs while serving as Africa’s gateway to global capital.',
+        'Invest Africa is a dynamic pan-African holding company and principal investor headquartered in Nairobi, with strategic offices in Dubai and Mauritius. With over 60 years of collective market experience, we own and manage a diversified portfolio across capital markets, renewable energy, digital healthcare, agriculture, logistics, and human capital.',
     },
     {
-      question: 'How can I get involved?',
+      question: 'How does Invest Africa operate as an investor?',
       answer:
-        'Institutions and professionals can engage with NPC by establishing regional or global headquarters, investing within the district, partnering within the ecosystem, or collaborating across finance, technology, and professional services to participate in Africa’s next-generation financial hub.',
+        'We operate as an active operational investor — combining capital deployment with hands-on venture building and strategic oversight. Our investment philosophy is anchored on sector-focused diversification, strong governance, risk-mitigated capital structuring, and long-term value creation.',
     },
     {
-      question: 'What programs do you offer?',
+      question: 'What co-investment opportunities are available?',
       answer:
-        'NPC supports a wide range of financial, innovation, and ecosystem initiatives including FinTech innovation platforms, talent development partnerships with universities and professional institutions, and collaborative programs that enable cross-border trade, investment, and capital flows.',
+        'We welcome strategic partnerships and institutional investors seeking private equity participation, structured products and asset-backed opportunities, infrastructure and green finance vehicles, diaspora-focused investment platforms, and sector-specific growth capital partnerships. Each opportunity is supported by robust due diligence and governance oversight.',
     },
     {
-      question: 'Who can benefit from your services?',
+      question: 'How does Invest Africa approach ESG?',
       answer:
-        'NPC is designed for financial institutions, investors, FinTech innovators, professional services firms, multinational corporations, and talent seeking a globally competitive, transparent, and future-ready financial environment in Africa.',
+        'Our strategy integrates Environmental, Social, and Governance (ESG) principles into every investment decision. We prioritize financial inclusion, clean energy transition, youth employment and skills development, green infrastructure development, and sustainable trade ecosystems.',
     },
     {
-      question: 'How is NPC governed?',
+      question: 'What investor resources are available?',
       answer:
-        'NPC operates under a strong governance framework comprising a Board of Directors providing strategic oversight, an Executive Leadership Team managing operations and development, and specialist functional teams across finance, innovation, legal, sustainability, and stakeholder engagement.',
+        'Upon request and under appropriate confidentiality agreements, we provide a corporate profile, portfolio overview, investment memorandum, ESG framework, and financial summaries. Please reach out to our investor relations team at investors@invest-africa.com.',
     },
     {
-      question: 'Where is NPC located?',
+      question: 'Where does Invest Africa operate?',
       answer:
-        'NPC is located in Nairobi, East Africa’s commercial and financial capital, providing unrivalled access to regional and international markets while operating within a globally aligned regulatory and business environment.',
+        'Our portfolio companies operate across Nairobi, Dubai, Mauritius, and key African markets, leveraging international regulatory frameworks and regional partnerships. We are headquartered at the Nairobi Global Trade Centre (GTC) on the 20th Floor.',
     },
   ];
-
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const scrollToContact = () => {
-    const el = document.querySelector('#contact');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section id="faq" ref={ref} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -69,7 +62,7 @@ const FAQ = () => {
             Frequently Asked <span className="text-red-800">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about our organization and services.
+            Find answers to common questions about Invest Africa's mandate, portfolio, and investor engagement.
           </p>
         </motion.div>
 
@@ -83,8 +76,8 @@ const FAQ = () => {
           >
             <img
               src="/hero.jpg"
-              alt="Financial District"
-              className="w-full h-[80vh]  object-cover"
+              alt="Invest Africa"
+              className="w-full h-[80vh] object-cover"
             />
           </motion.div>
 
@@ -102,9 +95,7 @@ const FAQ = () => {
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-red-50"
                 >
-                  <span className="text-lg font-semibold text-gray-900">
-                    {faq.question}
-                  </span>
+                  <span className="text-lg font-semibold text-gray-900">{faq.question}</span>
                   <motion.span
                     animate={{ rotate: openIndex === index ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
@@ -122,9 +113,7 @@ const FAQ = () => {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-5 text-gray-600">
-                        {faq.answer}
-                      </div>
+                      <div className="px-6 pb-5 text-gray-600">{faq.answer}</div>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -132,7 +121,6 @@ const FAQ = () => {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

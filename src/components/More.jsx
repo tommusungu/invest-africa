@@ -11,7 +11,7 @@ const More = () => {
     <section id="more" ref={ref} className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
 
-        {/* ================= ABOUT NPC ================= */}
+        {/* ================= ABOUT INVEST AFRICA ================= */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
           <motion.div
@@ -21,8 +21,8 @@ const More = () => {
           >
             <img
               src="/financial-district.jpg"
-              alt="About Nairobi Pesa City"
-              className="w-full h-[80vh]"
+              alt="About Invest Africa"
+              className="w-full h-[80vh] object-cover"
             />
           </motion.div>
 
@@ -33,41 +33,45 @@ const More = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-2 mb-4 rounded-full bg-red-100 text-red-800 text-sm font-semibold">
-              About NPC
+              About Invest Africa
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nairobi <span className="text-red-800">Pesa City</span>
+              Invest <span className="text-red-800">Africa</span>
             </h2>
 
-            {/* <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Nairobi Pesa City was conceived from a bold vision: to propel Kenya—and Africa—onto the global financial stage. Inspired by the world’s most successful financial districts, NPC is more than a development project; it is a catalyst for economic transformation.
-            </p> */}
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+              Invest Africa is a dynamic pan-African holding company and principal investor dedicated
+              to driving Africa's economic transformation. Headquartered in Nairobi, with strategic
+              offices in Dubai and Mauritius, we operate as an active operational investor with a
+              hands-on approach to venture building and sector-focused investment.
+            </p>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              NPC is firmly anchored within the Nairobi International Financial Centre (NIFC) framework, offering investors and institutions a stable, predictable, and business-friendly regulatory environment that meets international standards for transparency and compliance.
+              With over 60 years of collective market experience, our investment philosophy combines
+              deep market knowledge, rigorous research, and a commitment to building enduring,
+              locally empowered businesses with international governance standards.
             </p>
 
-            <p className="text-lg text-gray-600 leading-relaxed">
-              NPC is designed as a complete financial ecosystem that brings together institutions, talent, technology, and capital. The city will:
+            <p className="text-lg text-gray-600 leading-relaxed mb-4">
+              Our diversified portfolio spans six critical pillars:
             </p>
-            <ul className="list-disc list-inside text-gray-600 text-lg mb-6 space-y-2">
-              <li>Foster innovation through a dedicated FinTech and innovation centre.</li>
-              <li>Develop world-class financial talent in partnership with universities and professional institutions.</li>
-              <li>Enable cross-border trade, investment, and capital flows across Africa and beyond.</li>
+            <ul className="list-disc list-inside text-gray-600 text-lg mb-8 space-y-2">
+              <li>Capital Markets &amp; Financial Services</li>
+              <li>Renewable Energy &amp; Clean Infrastructure</li>
+              <li>Healthcare &amp; Digital Health Systems</li>
+              <li>Agriculture &amp; Food Security</li>
+              <li>Logistics &amp; Trade Platforms</li>
+              <li>Human Capital &amp; Workforce Solutions</li>
             </ul>
 
-            {/* <p className="text-lg text-gray-600 leading-relaxed">
-              NPC is built on strong partnerships with government, the private sector, educational institutions, and technology leaders—ensuring a shared vision, aligned execution, and sustainable impact.
-            </p> */}
-
-             {/* Vision */}
-            <div className="mb-8 mt-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Our Vision
-              </h3>
+            {/* Vision */}
+            <div className="mb-4 mt-4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-3">Our Vision</h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                To be the preeminent financial hub in Africa, attracting leading financial institutions, international investors, and fostering sustainable economic growth for Kenya and the continent.
+                To play a central and influential role in Africa's socio-economic growth by guiding
+                sustainable capital towards key investment opportunities across the continent — becoming
+                the trusted entry point into Africa.
               </p>
             </div>
           </motion.div>
@@ -89,20 +93,16 @@ const More = () => {
               Our <span className="text-red-800">Purpose</span>
             </h2>
 
-            {/* Mission */}
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Our Mission
-              </h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
               <ul className="space-y-3 text-gray-600 text-lg list-disc list-inside">
-                <li>Attract domestic and foreign investment by building a robust, globally competitive financial services ecosystem.</li>
-                <li>Stimulate national economic growth through increased financial activity, job creation, and enterprise development.</li>
-                <li>Position Kenya as a preferred global financial destination, accelerating its transition from a frontier to an emerging market.</li>
-                <li>Channel capital and investment into key sectors that drive national and regional development.</li>
-                <li>Deliver a transparent, efficient, and internationally aligned regulatory environment.</li>
-                <li>Provide state-of-the-art infrastructure tailored for modern financial institutions.</li>
-                <li>Promote innovation, technology adoption, and future-ready financial solutions.</li>
-                <li>Serve as Africa’s gateway to global financial markets.</li>
+                <li>Drive Africa's economic transformation by actively supporting and connecting businesses and investors via our pan-African platform.</li>
+                <li>Enable responsible and profitable private sector growth as a vital engine for Africa's development.</li>
+                <li>Foster trade and sustainable development through our dynamic membership network and consultative services.</li>
+                <li>Channel capital into renewable energy, healthcare, agriculture, and logistics to create lasting impact.</li>
+                <li>Build enduring, locally empowered businesses that meet international governance standards.</li>
+                <li>Unlock Africa's potential through strategic partnerships and impactful investment across the continent.</li>
+                <li>Serve as the trusted entry point for global investors seeking exposure to Africa's growth story.</li>
               </ul>
             </div>
           </motion.div>
@@ -115,8 +115,8 @@ const More = () => {
           >
             <img
               src="/nairobi-skyline.jpg"
-              alt="NPC Vision and Mission"
-              className="w-full h-[80vh]"
+              alt="Invest Africa Vision and Mission"
+              className="w-full h-[80vh] object-cover"
             />
           </motion.div>
         </div>

@@ -4,45 +4,45 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import {
   FaMapMarkedAlt,
-  FaBuilding,
-  FaPercent,
+  FaBriefcase,
   FaGlobeAfrica,
+  FaChartLine,
 } from 'react-icons/fa';
 
-const WhyNPC = () => {
+const WhyInvestAfrica = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const reasons = [
     {
       icon: <FaMapMarkedAlt />,
-      title: 'Strategic Location',
+      title: 'Pan-African Presence',
       description:
-        'Located in Nairobi—East Africa’s commercial and financial capital—NPC provides unrivalled access to regional and global markets.',
+        'Headquartered in Nairobi with strategic offices in Dubai and Mauritius, Invest Africa provides unrivalled access to African markets while operating under international regulatory frameworks.',
     },
     {
-      icon: <FaBuilding />,
-      title: 'Global-Standard Infrastructure',
+      icon: <FaBriefcase />,
+      title: 'Proven Track Record',
       description:
-        'Grade-A office spaces, smart buildings, high-speed connectivity, secure data centres, and modern amenities purpose-built for today’s financial institutions.',
+        'Over 60 years of collective market experience across capital markets, energy, healthcare, agriculture, and logistics — with a diversified portfolio of operational ventures across the continent.',
     },
     {
-      icon: <FaPercent />,
-      title: 'Competitive Incentives',
+      icon: <FaChartLine />,
+      title: 'Structured Investment Access',
       description:
-        'A comprehensive incentive framework including preferential tax rates, duty exemptions, 100% investment deduction allowances, and seamless one-stop-shop regulatory services.',
+        'A comprehensive co-investment framework including private equity participation, structured products, asset-backed opportunities, and green finance vehicles — all backed by rigorous due diligence.',
     },
     {
       icon: <FaGlobeAfrica />,
-      title: 'Gateway to Africa',
+      title: 'Trusted Entry Point into Africa',
       description:
-        'Positioning institutions at the heart of Africa’s fastest-growing markets while operating within a globally competitive financial environment.',
+        'Invest Africa serves as the gateway for global investors seeking Africa exposure — connecting capital with opportunity through deep local knowledge and international governance standards.',
     },
   ];
 
   return (
     <section
-      id="why-npc"
+      id="why-invest-africa"
       ref={ref}
       className="py-24 bg-gradient-to-br from-white to-red-50"
     >
@@ -55,14 +55,14 @@ const WhyNPC = () => {
           className="text-center mb-20"
         >
           <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
-            Why Choose NPC
+            Why Partner With Us
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why <span className="text-red-800">Nairobi Pesa City</span>
+            Why <span className="text-red-800">Invest Africa</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A purpose-built financial city designed to give institutions a
-            competitive edge in Africa and beyond.
+            A purpose-built pan-African investment platform designed to give institutions and
+            investors a competitive edge across the continent's fastest-growing markets.
           </p>
         </motion.div>
 
@@ -74,7 +74,7 @@ const WhyNPC = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.15 }}
-              className="relative bg-white  p-10  transition-all duration-300 border border-gray-100"
+              className="relative bg-white p-10 transition-all duration-300 border border-gray-100"
             >
               {/* Accent bar */}
               <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-red-600 to-red-800 rounded-l-2xl"></div>
@@ -85,12 +85,8 @@ const WhyNPC = () => {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed">
-                    {item.description}
-                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{item.title}</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </motion.div>
@@ -101,4 +97,4 @@ const WhyNPC = () => {
   );
 };
 
-export default WhyNPC;
+export default WhyInvestAfrica;
