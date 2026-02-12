@@ -32,12 +32,12 @@ const More = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 mb-4 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold">
+            <span className="inline-block px-4 py-2 mb-4 rounded-full bg-red-100 text-red-800 text-sm font-semibold">
               About NPC
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Nairobi <span className="text-blue-800">Pesa City</span>
+              Nairobi <span className="text-red-800">Pesa City</span>
             </h2>
 
             {/* <p className="text-lg text-gray-600 leading-relaxed mb-6">
@@ -81,12 +81,12 @@ const More = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block px-4 py-2 mb-4 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold">
+            <span className="inline-block px-4 py-2 mb-4 rounded-full bg-red-100 text-red-800 text-sm font-semibold">
               Mission
             </span>
 
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
-              Our <span className="text-blue-800">Purpose</span>
+              Our <span className="text-red-800">Purpose</span>
             </h2>
 
             {/* Mission */}

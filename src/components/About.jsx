@@ -41,11 +41,11 @@ const features = [
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
             About Us
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Who <span className="text-blue-800">We Are</span>
+            Who <span className="text-red-800">We Are</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
            Nairobi Pesa City was conceived from a bold vision: to propel Kenya—and Africa—onto the global financial stage. Inspired by the world’s most successful financial districts, NPC is more than a development project; it is a catalyst for economic transformation.
@@ -59,9 +59,9 @@ const features = [
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl transition-all duration-300 transform hover:-translate-y-2"
+              className="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="text-4xl text-blue-800 mb-4">{feature.icon}</div>
+              <div className="text-4xl text-red-800 mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
             </motion.div>
@@ -72,12 +72,12 @@ const features = [
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-gradient-to-r from-blue-800 to-blue-900 rounded-2xl p-12 text-white"
+          className="bg-gradient-to-r from-red-800 to-red-900 rounded-2xl p-12 text-white"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
-              <p className="text-blue-100 leading-relaxed text-lg">
+              <p className="text-red-100 leading-relaxed text-lg">
                 To empower communities through education, innovation, and collaborative action.
                 We aim to create sustainable solutions that address real-world challenges and
                 improve the quality of life for all stakeholders.
@@ -85,7 +85,7 @@ const features = [
             </div>
             <div>
               <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
-              <p className="text-blue-100 leading-relaxed text-lg">
+              <p className="text-red-100 leading-relaxed text-lg">
                 A world where every community has the resources, knowledge, and support needed
                 to thrive. We envision a future built on collaboration, innovation, and shared success.
               </p>

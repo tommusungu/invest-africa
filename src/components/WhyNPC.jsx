@@ -44,7 +44,7 @@ const WhyNPC = () => {
     <section
       id="why-npc"
       ref={ref}
-      className="py-24 bg-gradient-to-br from-white to-blue-50"
+      className="py-24 bg-gradient-to-br from-white to-red-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -54,11 +54,11 @@ const WhyNPC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
             Why Choose NPC
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why <span className="text-blue-800">Nairobi Pesa City</span>
+            Why <span className="text-red-800">Nairobi Pesa City</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             A purpose-built financial city designed to give institutions a
@@ -77,10 +77,10 @@ const WhyNPC = () => {
               className="relative bg-white  p-10  transition-all duration-300 border border-gray-100"
             >
               {/* Accent bar */}
-              <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-600 to-blue-800 rounded-l-2xl"></div>
+              <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-red-600 to-red-800 rounded-l-2xl"></div>
 
               <div className="flex items-start gap-6">
-                <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-blue-800 text-white text-2xl flex items-center justify-center">
+                <div className="flex-shrink-0 w-16 h-16 rounded-xl bg-red-800 text-white text-2xl flex items-center justify-center">
                   {item.icon}
                 </div>
 

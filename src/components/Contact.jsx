@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+      className="py-20 bg-gradient-to-br from-gray-50 to-red-50"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -66,11 +66,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
             Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Contact <span className="text-blue-800">Us</span>
+            Contact <span className="text-red-800">Us</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Have questions or want to learn more about Nairobi Pesa City? We’d love to hear from you.
@@ -88,7 +88,7 @@ const Contact = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               className="bg-white  p-6  transition-all duration-300 text-center group transform hover:-translate-y-2"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 text-blue-800 text-2xl mb-4 group-hover:bg-blue-800 group-hover:text-white transition-colors duration-300">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-red-100 text-red-800 text-2xl mb-4 group-hover:bg-red-800 group-hover:text-white transition-colors duration-300">
                 {info.icon}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -137,7 +137,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-800 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-800 focus:outline-none transition-colors"
                     placeholder="John Doe"
                   />
                 </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-800 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-800 focus:outline-none transition-colors"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-800 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-800 focus:outline-none transition-colors"
                   placeholder="How can we help?"
                 />
               </div>
@@ -182,14 +182,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows="6"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-800 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-800 focus:outline-none transition-colors resize-none"
                   placeholder="Tell us more about your inquiry..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-red-800 text-white rounded-lg font-semibold hover:bg-red-900 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 Send Message
                 <FaPaperPlane />

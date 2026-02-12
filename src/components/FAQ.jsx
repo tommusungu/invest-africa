@@ -62,11 +62,11 @@ const FAQ = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
             FAQ
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Frequently Asked <span className="text-blue-800">Questions</span>
+            Frequently Asked <span className="text-red-800">Questions</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Find answers to common questions about our organization and services.
@@ -96,11 +96,11 @@ const FAQ = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-blue-300 transition"
+                className="border-2 border-gray-200 rounded-xl overflow-hidden hover:border-red-300 transition"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-blue-50"
+                  className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-red-50"
                 >
                   <span className="text-lg font-semibold text-gray-900">
                     {faq.question}
@@ -109,7 +109,7 @@ const FAQ = () => {
                     animate={{ rotate: openIndex === index ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <FaChevronDown className="text-blue-800 text-xl" />
+                    <FaChevronDown className="text-red-800 text-xl" />
                   </motion.span>
                 </button>
 

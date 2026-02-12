@@ -45,7 +45,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-blue-950 text-gray-200">
+    <footer className="bg-red-950 text-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           
@@ -55,8 +55,8 @@ const Footer = () => {
   className="flex items-center"
 >
   <img
-    src="/npc-logo1.png"
-    alt="Nairobi Pesa City (NPC) Logo"
+    src="/logos/invest_Africa-removebg-preview.png"
+    alt="Invest Africa Logo"
     className={`h-10 mb-4 w-auto transition-all duration-300 brightness-0 invert drop-shadow-lg`}
   />
 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-full bg-blue-800 flex items-center justify-center text-gray-300 hover:bg-blue-800 hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="w-10 h-10 rounded-full bg-red-800 flex items-center justify-center text-gray-300 hover:bg-red-800 hover:text-white transition-all duration-300 transform hover:scale-110"
                 >
                   {social.icon}
                 </a>
@@ -145,7 +145,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-blue-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-red-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} NPC. All rights reserved.
           </p>
@@ -154,7 +154,7 @@ const Footer = () => {
             className="group flex items-center gap-2 text-gray-300 hover:text-white transition-colors duration-300"
           >
             <span className="text-sm font-medium">Back to top</span>
-            <div className="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center group-hover:bg-blue-800 transition-all duration-300 transform group-hover:-translate-y-1">
+            <div className="w-8 h-8 rounded-full bg-red-800 flex items-center justify-center group-hover:bg-red-800 transition-all duration-300 transform group-hover:-translate-y-1">
               <FaArrowUp className="text-sm" />
             </div>
           </button>

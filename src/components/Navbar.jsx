@@ -61,9 +61,9 @@ const Navbar = () => {
   className="flex items-center"
 >
   <img
-    src="/npc-logo1.png"
-    alt="Nairobi Pesa City (NPC) Logo"
-    className={`h-10 w-auto transition-all duration-300 ${
+    src="/logos/invest_Africa-removebg-preview.png"
+    alt="Invest Africa Logo"
+    className={`h-20 py-2.5 w-auto transition-all duration-300 ${
       scrolled ? 'brightness-100' : 'brightness-0 invert drop-shadow-lg'
     }`}
   />
@@ -81,8 +81,8 @@ const Navbar = () => {
                 onClick={(e) => scrollToSection(e, item.href)}
                 className={`transition-colors duration-300 font-medium ${
                   scrolled 
-                    ? 'text-gray-700 hover:text-blue-900' 
-                    : 'text-white hover:text-blue-200 drop-shadow-lg'
+                    ? 'text-gray-700 hover:text-red-900' 
+                    : 'text-white hover:text-red-200 drop-shadow-lg'
                 }`}
               >
                 {item.name}
@@ -95,8 +95,8 @@ const Navbar = () => {
               onClick={(e) => scrollToSection(e, '#contact')}
               className={`group inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${
                 scrolled
-                  ? 'bg-blue-900 text-white hover:bg-blue-800 shadow-lg hover:shadow-xl'
-                  : 'bg-white text-blue-900 hover:bg-blue-50 shadow-xl'
+                  ? 'bg-red-900 text-white hover:bg-red-800 shadow-lg hover:shadow-xl'
+                  : 'bg-white text-red-900 hover:bg-red-50 shadow-xl'
               }`}
             >
               Get Started
@@ -108,7 +108,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className={`transition-colors ${
-                scrolled ? 'text-gray-700 hover:text-blue-900' : 'text-white'
+                scrolled ? 'text-gray-700 hover:text-red-900' : 'text-white'
               }`}
             >
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -131,14 +131,14 @@ const Navbar = () => {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => scrollToSection(e, item.href)}
-                  className="block text-gray-700 hover:text-blue-900 transition-colors font-medium py-2"
+                  className="block text-gray-700 hover:text-red-900 transition-colors font-medium py-2"
                 >
                   {item.name}
                 </a>
               ))}
               <button
                 onClick={(e) => scrollToSection(e, '#contact')}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-blue-900 text-white rounded-full font-semibold hover:bg-blue-800 transition-all duration-300"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-red-900 text-white rounded-full font-semibold hover:bg-red-800 transition-all duration-300"
               >
                 Get Started
                 <FaArrowRight />

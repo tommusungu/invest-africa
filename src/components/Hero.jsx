@@ -10,7 +10,7 @@ const Hero = () => {
   // Nairobi cityscape images - using placeholder images that represent modern African cities
   const cityImages = [
     image,
-    image1,
+    // image1,
     image2,
   ];
 
@@ -71,16 +71,16 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
           >
-            Nairobi Pesa City
+            Invest Africa
           </motion.h1>
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-blue-100"
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-red-100"
           >
-            Africa’s Financial District. The Gateway to Global Capital.
+            Africa’s Investment Engine. Connecting Capital to Opportunity.
           </motion.div>
 
           <motion.p
@@ -89,14 +89,16 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-gray-100 mb-4 max-w-4xl mx-auto leading-relaxed"
           >
-            Nairobi Pesa City (NPC) is a world-class financial hub strategically positioned at the heart of Nairobi’s financial ecosystem. Designed to rival global financial centres such as Wall Street and Canary Wharf, NPC is set to become Africa’s premier destination for financial institutions, investors, and innovators seeking opportunity, scale, and global connectivity.
-          </motion.p>
+We are a dynamic pan-African holding company and
+principal investor dedicated to driving Africa’s economic
+transformation. We operate as an active operational investor, combining capital deployment with hands-on venture building and strategic oversight.
+     </motion.p>
 
           {/* <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-xl md:text-2xl font-semibold mb-10 text-blue-200"
+            className="text-xl md:text-2xl font-semibold mb-10 text-red-200"
           >
             Build. Invest. Connect Africa to the World.
           </motion.p> */}
@@ -109,7 +111,7 @@ const Hero = () => {
           >
             <button
               onClick={() => scrollToSection('#contact')}
-              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-900 rounded-full font-bold text-lg hover:bg-blue-50 transition-all duration-300 shadow-2xl hover:shadow-blue-500/50 transform hover:scale-105"
+              className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-red-900 rounded-full font-bold text-lg hover:bg-red-50 transition-all duration-300 shadow-2xl hover:shadow-red-500/50 transform hover:scale-105"
             >
               Get Started
               <FaArrowRight className="group-hover:translate-x-1 transition-transform" />

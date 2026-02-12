@@ -20,49 +20,49 @@ const Services = () => {
       title: 'Infrastructure & Facilities',
       description:
         'NPC delivers a fully integrated urban and financial environment with Grade-A office buildings, business centres, co-working spaces, conference and exhibition facilities, retail, dining, lifestyle amenities, hotels, residential options, and efficient transport connectivity.',
-      color: 'from-blue-600 to-blue-700',
+      color: 'from-red-600 to-red-700',
     },
     {
       icon: <FaMicrochip />,
       title: 'Innovation & Technology',
       description:
         'Technology is embedded at the core of NPC’s design. The district offers a plug-and-play environment with smart offices, advanced cybersecurity, high-speed digital infrastructure, and future-ready financial systems that support innovation at scale.',
-      color: 'from-blue-700 to-blue-800',
+      color: 'from-red-700 to-red-800',
     },
     {
       icon: <FaBalanceScale />,
       title: 'Governance & Leadership',
       description:
         'NPC operates under a robust governance framework with a Board of Directors providing strategic oversight, an Executive Leadership Team managing operations, and specialist functional teams across finance, innovation, legal, sustainability, and security.',
-      color: 'from-blue-600 to-blue-700',
+      color: 'from-red-600 to-red-700',
     },
     {
       icon: <FaLeaf />,
       title: 'Sustainability & Community',
       description:
         'NPC is committed to responsible and inclusive development through green building practices, renewable energy adoption, resource efficiency, community engagement, and long-term environmental stewardship.',
-      color: 'from-blue-700 to-blue-800',
+      color: 'from-red-700 to-red-800',
     },
     {
       icon: <FaRocket />,
       title: 'Opportunities at NPC',
       description:
         'NPC provides a powerful platform for financial institutions, investors, innovators, and professionals to establish regional or global headquarters, access capital markets, collaborate with leading players, and shape Africa’s financial future.',
-      color: 'from-blue-600 to-blue-700',
+      color: 'from-red-600 to-red-700',
     },
     {
       icon: <FaNetworkWired />,
       title: 'Connected Financial Ecosystem',
       description:
         'Designed as a fully connected ecosystem, NPC enables seamless collaboration between institutions, technology providers, regulators, and talent—accelerating growth, efficiency, and cross-border opportunity.',
-      color: 'from-blue-700 to-blue-800',
+      color: 'from-red-700 to-red-800',
     },
   ];
 
   return (
     <section
       id="what-we-offer"
-      className="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+      className="py-20 bg-gradient-to-br from-gray-50 to-red-50"
       ref={ref}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,11 +73,11 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-blue-100 text-blue-800 text-sm font-semibold mb-4">
+          <span className="inline-block px-4 py-2 rounded-full bg-red-100 text-red-800 text-sm font-semibold mb-4">
             Infrastructure & Facilities
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Built for <span className="text-blue-800">Global Finance</span>
+            Built for <span className="text-red-800">Global Finance</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Nairobi Pesa City is purpose-built to support world-class financial
@@ -107,7 +107,7 @@ const Services = () => {
                   {item.icon}
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-800 transition-colors">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-800 transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -131,7 +131,7 @@ const Services = () => {
                 behavior: 'smooth',
               })
             }
-            className="inline-flex items-center gap-2 px-8 py-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-red-800 text-white rounded-lg font-semibold hover:bg-red-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             Explore Opportunities at NPC
           </button>
